@@ -1,4 +1,4 @@
-# machine-learning
+# Machine Learning
 
 This Repo contains Python code for common algorithms and dataset
 
