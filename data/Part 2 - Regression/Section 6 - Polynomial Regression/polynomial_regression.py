@@ -21,7 +21,7 @@ linearRegressor.fit(X,y) # We have also created a linear model to compare its ef
 
 # Fitting Polynomial Regression to the dataset
 from sklearn.preprocessing import PolynomialFeatures
-polyRegression = PolynomialFeatures(degree=3)
+polyRegression = PolynomialFeatures(degree=4)
 
 X_poly = polyRegression.fit_transform(X) ## Creating new metrics X_poly with polynomial feature
 
