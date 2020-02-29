@@ -55,3 +55,28 @@ for name, group in dfGroupBy:
 dfGroupBy.get_group('Young')
 
 # %%
+# Aggregations in Group [Count]
+dfGroupBy.count()
+
+
+# %%
+# Aggregations in Group [first, last]
+dfGroupBy.first()
+dfGroupBy.last() 
+
+# %%
+
+print(dfGroupBy['Total_Score'].mean())
+# print(dfGroupBy['Total_Score'].median())
+# print(dfGroupBy['Total_Score'].max())
+# print(dfGroupBy['Total_Score'].min())
+# std(), var() Standard deviation and variance
+# prod() Product of all items
+# sum() Sum of all items
+
+# %%
+
+# Multiple aggregations in a single statement
+dfGroupBy['Total_Score'].agg([np.sum, np.prod, np.std, np.var ])
+
+# %%
